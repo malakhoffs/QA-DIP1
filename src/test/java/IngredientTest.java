@@ -11,8 +11,8 @@ import static praktikum.Constants.DELTA;
 public class IngredientTest {
 
     IngredientType ingredientType;
-    String name;
-    float price;
+    private final String name;
+    private final float price;
 
     @Parameterized.Parameters
     public static Object[][] getData() {

@@ -10,8 +10,8 @@ import static praktikum.Constants.DELTA;
 public class BunTest {
 
 
-    String name;
-    float price;
+    private final String name;
+    private final float price;
 
     @Parameterized.Parameters(name = "{index} Value = {0}")
     public static Object[][] getData() {

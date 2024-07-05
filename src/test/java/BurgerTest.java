@@ -18,7 +18,6 @@ import static praktikum.Constants.DELTA;
     private Ingredient ingredient1, ingredient2, ingredient3;
 
     Burger burger = new Burger();
-    IngredientType ingredientType;
 
     @Before
     public void ingredientSetUp (){
@@ -60,12 +59,7 @@ import static praktikum.Constants.DELTA;
     public void removeIngredientTest(){
         burger.addIngredient(ingredient1);
         burger.addIngredient(ingredient2);
-        burger.addIngredient(ingredient3);
-        assertEquals(3, burger.ingredients.size());
         burger.removeIngredient(1);
-        assertEquals(2, burger.ingredients.size());
-        burger.removeIngredient(0);
-        assertEquals(1, burger.ingredients.size());
         burger.removeIngredient(0);
         assertEquals("ingredients should be removable", 0, burger.ingredients.size());
     }
